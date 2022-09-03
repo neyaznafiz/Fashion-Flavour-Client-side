@@ -28,7 +28,7 @@ function App() {
         <h2 className='text-2xl font-serif text-yellow-600'>FASHION FLAVOUR</h2>
       </div>
 
-      <div className="flex">
+      <div className="flex h-[]">
 
 
         <Header className=''></Header>

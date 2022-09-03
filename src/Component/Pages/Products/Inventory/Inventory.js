@@ -9,13 +9,13 @@ const Inventory = () => {
     const [product] = useProducts()
 
     return (
-        <div className='card-shadow my-10 lg:mx-auto  px-5 pt-5 lg:w-11/12'>
+        <div className='md:card-shadow lg:card-shadow my-4 lg:my-10 lg:mx-auto px-2 md:px-5 lg:px-5  lg:w-11/12'>
 
-            <div>
-                <p className='text-center mx-auto lg:text-4xl font-serif font-semibold mb-5 border-b-2 border-zinc-700 w-6/12 '>INVENTORY ITEMS</p>
+            <div className='my-4 md:py-14 lg:py-14'>
+                <p className='text-center mx-auto lg:text-4xl font-serif font-semibold border-b-2 border-zinc-700 w-6/12 '>INVENTORY ITEMS</p>
             </div>
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
                 {
                     product.slice(0, 6).map(product =>
                         <Product
