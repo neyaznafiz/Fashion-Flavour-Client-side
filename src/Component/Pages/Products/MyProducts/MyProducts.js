@@ -21,7 +21,7 @@ const MyProducts = () => {
 
             const email = user.email;
 
-            const url = `https://cryptic-stream-11517.herokuapp.com/mydress?email=${email}`;
+            const url = `https://fashion-flavour-server.onrender.com/mydress?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -43,7 +43,7 @@ const MyProducts = () => {
     const productDeleteHandle = async (id) => {
 
         if (window.confirm('Are you sure you want to delete?')) {
-            await axios.delete(`https://cryptic-stream-11517.herokuapp.com/dress/${id}`, product)
+            await axios.delete(`https://fashion-flavour-server.onrender.com/dress/${id}`, product)
             const exist = product.filter((product) => product._id !== id);
             setProduct(exist);
         } else {

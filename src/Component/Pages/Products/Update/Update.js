@@ -14,11 +14,11 @@ const Update = () => {
     const { img, name, supplier, description, price, quantity } = product
 
 
-    // const { data } = axios.get(`https://cryptic-stream-11517.herokuapp.com//dress/${Id}`, product)
+    // const { data } = axios.get(`https://fashion-flavour-server.onrender.com//dress/${Id}`, product)
     // setProduct(data)
 
     useEffect(() => {
-        fetch(`https://cryptic-stream-11517.herokuapp.com/dress/${Id}`)
+        fetch(`https://fashion-flavour-server.onrender.com/dress/${Id}`)
             .then(res => res.json())
             .then(data => {
                 setProduct(data)
@@ -36,7 +36,7 @@ const Update = () => {
         const updatedData = + restock + newQuantity
         setNewQuantity(updatedData)
 
-        const url = `https://cryptic-stream-11517.herokuapp.com/dress/${Id}`
+        const url = `https://fashion-flavour-server.onrender.com/dress/${Id}`
 
         fetch(url, {
             method: 'PUT',
@@ -62,7 +62,7 @@ const Update = () => {
             const updatedData = newQuantity - 1
             setNewQuantity(updatedData)
 
-            const url = `https://cryptic-stream-11517.herokuapp.com/dress/${Id}`
+            const url = `https://fashion-flavour-server.onrender.com/dress/${Id}`
 
             fetch(url, {
                 method: 'PUT',

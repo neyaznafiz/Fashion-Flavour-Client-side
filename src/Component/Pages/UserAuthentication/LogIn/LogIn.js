@@ -49,7 +49,7 @@ const LogIn = () => {
         const password = passwordRef.current.value
 
         await signInWithEmailAndPassword(email, password)
-        const { data } = await axios.post(`https://cryptic-stream-11517.herokuapp.com/login`, { email })
+        const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/login`, { email })
         localStorage.setItem('accessJwtToken', data.accessJwtToken)
     }
 

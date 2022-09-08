@@ -24,7 +24,7 @@ const AddProduct = () => {
             img: event.target.photo.value
         }
 
-        const { data } = await axios.post('https://cryptic-stream-11517.herokuapp.com/dress', product)
+        const { data } = await axios.post('https://fashion-flavour-server.onrender.com/dress', product)
         console.log(data);
         if (data.insertedId) {
             alert('Your product added successfully.')

@@ -15,9 +15,9 @@ const Inventory = () => {
                 <p className='text-center mx-auto lg:text-4xl font-serif font-semibold border-b-2 border-zinc-700 w-6/12 '>INVENTORY ITEMS</p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4'>
                 {
-                    product.slice(0, 6).map(product =>
+                    product.slice(0, 4).map(product =>
                         <Product
                             key={product._id}
                             product={product}>

@@ -38,7 +38,7 @@ const SocialLogin = () => {
 
   // const googleSignIn = async () => {
   //   signInWithGoogle()
-  //   const { data } = await axios.post(`https://cryptic-stream-11517.herokuapp.com/signup`, {googleUser})
+  //   const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/signup`, {googleUser})
   //       localStorage.setItem('accessJwtToken', data.accessJwtToken)
   // }
 

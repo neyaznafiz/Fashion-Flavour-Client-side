@@ -49,7 +49,7 @@ const SignUp = () => {
 
         createUserWithEmailAndPassword(email, password)
 
-        const { data } = await axios.post(`https://cryptic-stream-11517.herokuapp.com/signup`, { email })
+        const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/signup`, { email })
         localStorage.setItem('accessJwtToken', data.accessJwtToken)
 
         updateProfile()

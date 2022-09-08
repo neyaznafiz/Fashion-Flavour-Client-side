@@ -17,7 +17,7 @@ const ManageInventory = () => {
 
 
     useEffect(() => {
-        const url = `https://cryptic-stream-11517.herokuapp.com/dress?page=${page}&size=${size}`
+        const url = `https://fashion-flavour-server.onrender.com/dress?page=${page}&size=${size}`
 
         fetch(url)
             .then(res => res.json())
@@ -27,7 +27,7 @@ const ManageInventory = () => {
 
 
     useEffect(() => {
-        fetch(`https://cryptic-stream-11517.herokuapp.com/productCount`)
+        fetch(`https://fashion-flavour-server.onrender.com/productCount`)
             .then(res => res.json())
             .then(data => {
                 const count = data.count

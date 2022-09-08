@@ -9,7 +9,7 @@ const useProducts = () => {
 
 
     useEffect(() => {
-        const url = `https://cryptic-stream-11517.herokuapp.com/dress`
+        const url = `https://fashion-flavour-server.onrender.com/dress`
 
         fetch(url)
             .then(res => res.json())
