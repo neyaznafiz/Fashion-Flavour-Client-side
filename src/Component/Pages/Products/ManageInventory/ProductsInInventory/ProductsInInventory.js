@@ -18,7 +18,7 @@ const ProductsInInventory = (props) => {
 
 
             <div className="flex justify-center ">
-                <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg hover-zoom">
+                <div className="flex flex-col md:flex-row  rounded-lg bg-white shadow-lg hover-zoom">
                     <img className=" w-full h-48 lg:h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg hover:rounded-lg" src={img} alt="" />
 
                     <div className="p-6 flex flex-col justify-start">

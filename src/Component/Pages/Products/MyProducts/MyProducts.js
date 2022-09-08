@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../../../Firebase/firebase.init';
 import useProducts from '../../../Hooks/useProducts/useProducts';
 
@@ -20,6 +21,7 @@ const MyProducts = () => {
         const getProductsFilterByEmail = async () => {
 
             const email = user.email;
+            console.log(email);
 
             const url = `https://fashion-flavour-server.onrender.com/mydress?email=${email}`;
             try {
@@ -32,8 +34,9 @@ const MyProducts = () => {
             }
             catch (error) {
                 if (error?.response?.status === 401 || error?.response?.status === 403) {
-                    signOut(auth);
-                    navigate('/login')
+                    // signOut(auth);
+                    // navigate('/login')
+                    toast.error('Facing some issues.')
                 }
             }
         }

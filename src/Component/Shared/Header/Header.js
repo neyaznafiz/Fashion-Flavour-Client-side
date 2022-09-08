@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../Firebase/firebase.init';
 import logo from '../../../Images/logo.png'
 import { FiHome } from 'react-icons/fi';
@@ -21,11 +21,13 @@ import { MdOutlineDoubleArrow } from "react-icons/md";
 const Header = () => {
 
     const [user] = useAuthState(auth)
-
+    const navigate = useNavigate()
     const [open, setOpen] = useState(false)
 
     const handleSignOut = () => {
         signOut(auth)
+        localStorage.removeItem('accessJwtToken')
+        navigate('/')
     }
 
 

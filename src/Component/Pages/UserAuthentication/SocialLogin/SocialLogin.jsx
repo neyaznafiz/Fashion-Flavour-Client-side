@@ -39,7 +39,7 @@ const SocialLogin = () => {
   const googleSignIn = async () => {
     signInWithGoogle()
     const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/signup`, {googleUser})
-        // localStorage.setItem('accessJwtToken', data.accessJwtToken)
+        localStorage.setItem('accessJwtToken', data.accessJwtToken)
   }
 
   return (
