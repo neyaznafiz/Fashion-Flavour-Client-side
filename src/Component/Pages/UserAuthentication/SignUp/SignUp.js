@@ -50,7 +50,7 @@ const SignUp = () => {
         createUserWithEmailAndPassword(email, password)
 
         const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/signup`, { email })
-        localStorage.setItem('accessJwtToken', data.accessJwtToken)
+        // localStorage.setItem('accessJwtToken', data.accessJwtToken)
 
         updateProfile()
         toast.success('Your profile updated')

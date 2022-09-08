@@ -36,11 +36,11 @@ const SocialLogin = () => {
     toast.success('Congratulation ! You are Loged In successfully. Enjoy our more feature here.')
   }
 
-  // const googleSignIn = async () => {
-  //   signInWithGoogle()
-  //   const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/signup`, {googleUser})
-  //       localStorage.setItem('accessJwtToken', data.accessJwtToken)
-  // }
+  const googleSignIn = async () => {
+    signInWithGoogle()
+    const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/signup`, {googleUser})
+        // localStorage.setItem('accessJwtToken', data.accessJwtToken)
+  }
 
   return (
     <div>

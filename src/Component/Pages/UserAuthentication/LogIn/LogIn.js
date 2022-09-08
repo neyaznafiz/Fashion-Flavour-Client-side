@@ -50,7 +50,7 @@ const LogIn = () => {
 
         await signInWithEmailAndPassword(email, password)
         const { data } = await axios.post(`https://fashion-flavour-server.onrender.com/login`, { email })
-        localStorage.setItem('accessJwtToken', data.accessJwtToken)
+        // localStorage.setItem('accessJwtToken', data.accessJwtToken)
     }
 
     const resetPassHandle = async event => {
