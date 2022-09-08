@@ -24,9 +24,9 @@ const MyProducts = () => {
             const url = `https://fashion-flavour-server.onrender.com/mydress?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
-                    headers: {
-                        authorization: `Bearer ${localStorage.getItem('accessJwtToken')}`
-                    }
+                    // headers: {
+                    //     authorization: `Bearer ${localStorage.getItem('accessJwtToken')}`
+                    // }
                 });
                 setProduct(data);
             }
