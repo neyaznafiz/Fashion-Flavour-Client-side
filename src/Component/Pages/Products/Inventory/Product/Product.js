@@ -14,7 +14,7 @@ const Product = ({ product }) => {
         <div className=''>
 
                 <div className="flex justify-center ">
-                    <div className="flex flex-col md:flex-row lg:w-xl rounded-lg bg-white shadow-lg hover-zoom">
+                    <div className="flex flex-col md:flex-row lg:w-xl rounded-lg bg-white shadow-lg hover-zoom overflow-hidden">
                         <img className=" w-full h-full lg:h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg hover:rounded-lg" src={img} alt="" />
                         <div className="p-3 md:p-3 lg:p-6 flex flex-col justify-start">
                             <h5 className="text-gray-900 text-3xl font-medium mb-1 font-serif">{name}</h5>
