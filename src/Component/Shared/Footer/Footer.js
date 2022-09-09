@@ -10,13 +10,13 @@ const Footer = () => {
 
                 <div className="container p-4 ">
                     {/* <section className="mb-4"> */}
-                        <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"> <RiFacebookFill className='text-2xl ml-1 mt-1'/></a>
+                        <a className="btn btn-outline-light  m-1" href="#!" role="button"> <RiFacebookFill className='text-2xl ml-1 mt-1'/></a>
 
-                        <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                        <a className="btn btn-outline-light  m-1" href="#!" role="button"
                         ><RiTwitterFill className='text-2xl mx-1 mt-1'/></a>
                        
-                        <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                        ><RiInstagramFill className='text-2xl mx-1 mt-1'/></a>
+                        <a className="btn btn-outline-light  m-1 " href="#!" role="button"
+                        ><RiInstagramFill className='text-2xl mx-1'/></a>
 
                     {/* </section> */}
                     {/* <!-- Section: Social media --> */}
