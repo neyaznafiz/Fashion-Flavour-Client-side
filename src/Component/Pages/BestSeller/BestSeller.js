@@ -17,7 +17,7 @@ const BestSeller = () => {
       </div>
 
       <div className=" lg:flex justify-around px-2 ">
-        <div className="card card-shadow grid grid-cols-1 lg:w-96" data-aos="flip-left" data-aos-delay="200">
+        <div className="card card-shadow grid grid-cols-1 lg:w-96" data-aos="flip-left" data-aos-delay="150">
           <div className="card-body" data-aos="zoom-in" data-aos-delay="200">
             <h5 className="card-title text-2xl font-semibold">Times Leather</h5>
             <p className="card-text">
@@ -29,7 +29,7 @@ const BestSeller = () => {
             </p>
           </div>
         </div>
-        <div className="card card-shadow lg:w-96 my-2" data-aos="flip-left" data-aos-delay="200">
+        <div className="card card-shadow lg:w-96 my-2" data-aos="flip-left" data-aos-delay="150">
           <div className="card-body" data-aos="zoom-in" data-aos-delay="200">
             <h5 className="card-title text-2xl font-semibold">Albaro Cloth</h5>
             <p className="card-text">
@@ -41,7 +41,7 @@ const BestSeller = () => {
             </p>
           </div>
         </div>
-        <div className="card card-shadow lg:w-96" data-aos="flip-left" data-aos-delay="200">
+        <div className="card card-shadow lg:w-96" data-aos="flip-left" data-aos-delay="150">
           <div className="card-body" data-aos="zoom-in" data-aos-delay="200">
             <h5 className="card-title text-2xl font-semibold">
               Vedant Fashions Limited

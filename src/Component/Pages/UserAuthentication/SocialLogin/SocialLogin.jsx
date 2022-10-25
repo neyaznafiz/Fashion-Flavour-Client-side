@@ -3,7 +3,6 @@ import auth from "../../../../Firebase/firebase.init";
 import {
   useSignInWithFacebook,
   useSignInWithGoogle,
-  useSignInWithTwitter,
 } from "react-firebase-hooks/auth";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
@@ -75,7 +74,6 @@ const SocialLogin = () => {
             onClick={() => signInWithFacebook()}
             className="lg:text-3xl text-5xl"
           >
-            {" "}
             <BsFacebook className=""></BsFacebook>
           </button>
         </div>
