@@ -69,15 +69,25 @@ const LogIn = () => {
     <div className=" w-full pt-24 bg-yellow-600 border-8 border-yellow-600 grid grid-cols-1 lg:grid-cols-1">
       <section className="h-100 h-custom" style={{ backgroundColor: "1" }}>
         <div className="container py-5 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
+          <div
+            className="row d-flex justify-content-center align-items-center h-100"
+            data-aos="zoom-in"
+          >
             <div className="col-lg-5 col-xl-5">
               <div className="card form-shadow">
                 <img
                   src="https://i.ibb.co/MVtZQR1/img3.jpg"
-                  className="w-100 rounded-t-lg" alt=""
+                  className="w-100 rounded-t-lg"
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
                 />
                 <div className="card-body">
-                  <h3 className="mb-4 pb-2  text-2xl font-bold font-serif">
+                  <h3
+                    className="mb-4 pb-2  text-2xl font-bold font-serif"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
                     LogIn Here
                   </h3>
 
@@ -87,7 +97,11 @@ const LogIn = () => {
                   >
                     <div className="row">
                       <div className=" mb-4">
-                        <div className="form-outline datepicker form-shadow">
+                        <div
+                          className="form-outline datepicker form-shadow"
+                          data-aos="flip-down"
+                          data-aos-delay="200"
+                        >
                           <input
                             ref={emailRef}
                             type="email"
@@ -104,7 +118,11 @@ const LogIn = () => {
                         </div>
                       </div>
                       <div className=" mb-3">
-                        <div className="form-outline datepicker form-shadow">
+                        <div
+                          className="form-outline datepicker form-shadow"
+                          data-aos="flip-down"
+                          data-aos-delay="200"
+                        >
                           <input
                             ref={passwordRef}
                             type="password"
@@ -124,6 +142,8 @@ const LogIn = () => {
                           <button
                             onClick={resetPassHandle}
                             className="font-semibold mt-1 text-white text-lg"
+                            data-aos="fade-right"
+                            data-aos-delay="200"
                           >
                             Forget Password
                           </button>
@@ -135,11 +155,17 @@ const LogIn = () => {
                       <button
                         type="submit"
                         className="px-4 py-2 mb-3 btn-shadow text-gray-100"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
                       >
                         Log In
                       </button>
 
-                      <div className="text-gray-200 font-semibold flex gap-x-2 ">
+                      <div
+                        className="text-gray-200 font-semibold flex gap-x-2 "
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                      >
                         <p>Are you new here ? </p>
                         <Link
                           to="/signup"

@@ -53,7 +53,8 @@ const SocialLogin = () => {
   };
 
   return (
-    <div>
+    <div  data-aos="flip-down"
+    data-aos-delay="200">
       <div className=" py-2 px-4 flex lg:justify-between justify-center lg:gap-0 gap-16 items-center social-shadow">
         <div className="text-gray-300 hover:text-gray-800">
           <button

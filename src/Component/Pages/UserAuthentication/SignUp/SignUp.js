@@ -60,20 +60,34 @@ const SignUp = () => {
     <div className=" w-full pb-20 bg-yellow-600 border-8 border-yellow-600 grid grid-cols-1 lg:grid-cols-1">
       <section className="h-100 h-custom" style={{ backgroundColor: "1" }}>
         <div className="container pt-24 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
+          <div
+            className="row d-flex justify-content-center align-items-center h-100"
+            data-aos="zoom-in"
+          >
             <div className="col-lg-5 col-xl-5">
               <div className="card form-shadow">
                 <img
                   src="https://i.ibb.co/MVtZQR1/img3.jpg"
-                  className="w-100 rounded-t-lg" alt=""
+                  className="w-100 rounded-t-lg"
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
                 />
                 <div className="card-body">
-                  <h3 className="mb-4 pb-2  text-2xl font-bold font-serif">
+                  <h3
+                    className="mb-4 pb-2  text-2xl font-bold font-serif"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
                     SignUp Here
                   </h3>
 
                   <form onSubmit={handleSignUp} className="px-md-2">
-                    <div className="form-outline mb-4 form-shadow">
+                    <div
+                      className="form-outline mb-4 form-shadow"
+                      data-aos="flip-down"
+                      data-aos-delay="200"
+                    >
                       <input
                         type="text"
                         name="name"
@@ -90,7 +104,11 @@ const SignUp = () => {
 
                     <div className="row">
                       <div className=" mb-4">
-                        <div className="form-outline datepicker form-shadow">
+                        <div
+                          className="form-outline datepicker form-shadow"
+                          data-aos="flip-down"
+                          data-aos-delay="200"
+                        >
                           <input
                             type="email"
                             name="email"
@@ -106,7 +124,11 @@ const SignUp = () => {
                         </div>
                       </div>
                       <div className=" mb-4">
-                        <div className="form-outline datepicker form-shadow">
+                        <div
+                          className="form-outline datepicker form-shadow"
+                          data-aos="flip-down"
+                          data-aos-delay="200"
+                        >
                           <input
                             type="password"
                             name="password"
@@ -123,7 +145,11 @@ const SignUp = () => {
                       </div>
 
                       <div className=" mb-4">
-                        <div className="form-outline datepicker form-shadow">
+                        <div
+                          className="form-outline datepicker form-shadow"
+                          data-aos="flip-down"
+                          data-aos-delay="200"
+                        >
                           <input
                             type="password"
                             name="confirm-password"
@@ -144,11 +170,14 @@ const SignUp = () => {
                       <button
                         type="submit"
                         className=" px-4 py-2 mb-3 btn-shadow text-gray-100"
+                        data-aos="fade-left"
+                          data-aos-delay="200"
                       >
                         Sign Up
                       </button>
 
-                      <div className="text-gray-200 font-semibold  flex gap-x-2 ">
+                      <div className="text-gray-200 font-semibold  flex gap-x-2 " data-aos="fade-right"
+                          data-aos-delay="200">
                         <p>Already have an account ?</p>
                         <Link
                           to="/login"
