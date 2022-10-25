@@ -14,7 +14,7 @@ const ProductsInInventory = (props) => {
     }
 
     return (
-        <div className=''>
+        <div className=''  data-aos="zoom-in">
 
 
             <div className="flex justify-center ">
