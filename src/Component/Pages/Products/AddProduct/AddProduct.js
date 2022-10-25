@@ -68,28 +68,28 @@ const AddProduct = () => {
               type="text"
               name="name"
               placeholder="PRODUCT NAME"
-              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800"
+              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800 placeholder-zinc-800/60"
               required
             />
             <input
               type="number"
               name="price"
               placeholder="PRODUCT PRICE"
-              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800"
+              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800 placeholder-zinc-800/60"
               required
             />
             <input
               type="number"
               name="quantity"
               placeholder="PRODUCT QUANTITY"
-              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800"
+              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800 placeholder-zinc-800/60"
               required
             />
             <input
               type="text"
               name="suppliername"
               placeholder="SUPPLIER NAME"
-              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800"
+              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800 placeholder-zinc-800/60"
               required
             />
 
@@ -97,7 +97,7 @@ const AddProduct = () => {
               type="text"
               name="photo"
               placeholder="PRODUCT IMAGE URL"
-              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800"
+              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800 placeholder-zinc-800/60"
               required
             />
 
@@ -105,7 +105,7 @@ const AddProduct = () => {
               type="text"
               name="description"
               placeholder="WRITE PRODUCT DESCRIPTION"
-              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800"
+              className=" px-2 py-2 rounded-md form-shadow border-0 text-zinc-800 placeholder-zinc-800/60"
               required
             />
 

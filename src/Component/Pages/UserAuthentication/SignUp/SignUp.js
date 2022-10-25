@@ -66,7 +66,7 @@ const SignUp = () => {
               <div className="card form-shadow">
                 <img
                   src="https://i.ibb.co/MVtZQR1/img3.jpg"
-                  className="w-100 rounded-t-lg"
+                  className="w-100 rounded-t-lg" alt=""
                 />
                 <div className="card-body">
                   <h3 className="mb-4 pb-2  text-2xl font-bold font-serif">
@@ -144,20 +144,20 @@ const SignUp = () => {
                     <div className="lg:flex lg:items-center lg:justify-between grid grid-cols-1">
                       <button
                         type="submit"
-                        className=" btn btn-lg mb-3 btn-shadow text-gray-300"
+                        className=" px-4 py-2 mb-3 btn-shadow text-gray-100"
                       >
                         Sign Up
                       </button>
 
-                      <p className="text-gray-200 font-semibold lg:flex grid justify-center ">
-                        Already have an account ?{" "}
+                      <div className="text-gray-200 font-semibold  flex gap-x-2 ">
+                        <p>Already have an account ?</p>
                         <Link
                           to="/login"
                           className="hover:text-white hover:border-b-2 lg:mx-2 mx-auto"
                         >
                           Log In
                         </Link>
-                      </p>
+                      </div>
                     </div>
                   </form>
 
