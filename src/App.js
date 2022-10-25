@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <div className="bg-zinc-800 py-3 text-center border-0 gap-0 fixed-top z-10 top-0">
-        <h2 className="text-2xl font-serif text-yellow-600">FASHION FLAVOUR</h2>
+        <h2 className="text-2xl font-serif text-yellow-600" data-aos="fade-down">FASHION FLAVOUR</h2>
       </div>
 
       <div className="flex min-h-[calc(100vh-153px)]">
