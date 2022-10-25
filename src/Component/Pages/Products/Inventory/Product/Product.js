@@ -34,7 +34,6 @@ const Product = ({ product }) => {
                 Supplier: {supplier}
               </p>
               <p className="text-gray-700 text-base mb-4" data-aos="fade-left">
-                {" "}
                 {description.slice(0, 100)}....{" "}
               </p>
 

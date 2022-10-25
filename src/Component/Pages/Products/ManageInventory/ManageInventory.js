@@ -51,7 +51,7 @@ const ManageInventory = () => {
     <div className=" flex lg:mx-auto">
       <div className=" grid my-10 lg:mx-auto  px-5 pt-5 ">
         <div>
-          <p className="text-center mx-auto text-4xl font-serif font-semibold mb-5 border-b-2 border-zinc-700 w-6/12">
+          <p className="text-center mx-auto text-4xl font-serif font-semibold mb-5 border-b-2 border-zinc-700 w-6/12" data-aos="zoom-in">
             ALL PRODUCTS
           </p>
         </div>
@@ -61,6 +61,7 @@ const ManageInventory = () => {
             <button
               onClick={() => navigate(-1)}
               className="card-shadow py-2 px-4 font-semibold"
+              data-aos="fade-right"
             >
               BACK
             </button>
@@ -71,6 +72,7 @@ const ManageInventory = () => {
               <Link
                 to="/myproducts"
                 className="card-shadow hover:shadow-lg px-3 py-2 flex font-semibold hover:text-black"
+                data-aos="fade-left"
               >
                 MY PRODUCTS <MdArrowForwardIos className="mt-1 ml-2" />
               </Link>
@@ -79,6 +81,7 @@ const ManageInventory = () => {
               <Link
                 to="/addproduct"
                 className="card-shadow px-3 py-2 flex font-semibold hover:text-black"
+                data-aos="fade-left"
               >
                 ADD NEW ITEM <MdArrowForwardIos className="mt-1 ml-2" />
               </Link>
@@ -98,7 +101,7 @@ const ManageInventory = () => {
       </div>
 
       <div className="grid items-end pb-9 pl-4">
-        <div>
+        <div data-aos="zoom-in">
           <select
             onChange={(event) => setSize(event.target.value)}
             className="card-shadow ml-1 py-1 px-2 font-semibold"
