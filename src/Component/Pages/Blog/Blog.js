@@ -5,13 +5,13 @@ const Blog = () => {
     <div className='mt-16 bg-yellow-600 w-screen'>
 
       <div className='text-center mt-10 lg:mt-28'>
-        <h2 className='text-4xl font-serif font-semibold'>EXPLORE SOME QUESTION ANSWER</h2>
+        <h2 className='text-4xl font-serif font-semibold' data-aos="zoom-in">EXPLORE SOME QUESTION ANSWER</h2>
       </div>
 
-      <div className='form-shadow mx-3 lg:mx-20 mt-10 lg:mb-36 lg:p-20 grid grid-cols-1'>
+      <div className='form-shadow mx-3 lg:mx-20 mt-10 lg:mb-36 lg:p-20 grid grid-cols-1' data-aos="zoom-in">
 
         <div className="accordion " id="accordionExample">
-          <div className="accordion-item form-shadow">
+          <div className="accordion-item form-shadow" data-aos="flip-down" data-aos-delay="200">
             <h2 className="accordion-header" id="headingOne">
               <button
                 className="accordion-button text-xl font-semibold text-zinc-800" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
@@ -26,7 +26,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item form-shadow">
+          <div className="accordion-item form-shadow" data-aos="flip-down" data-aos-delay="200">
             <h2 className="accordion-header" id="headingTwo">
               <button
                 className="accordion-button collapsed text-xl font-semibold text-zinc-800" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
@@ -46,7 +46,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item form-shadow">
+          <div className="accordion-item form-shadow" data-aos="flip-down" data-aos-delay="200">
             <h2 className="accordion-header" id="headingThree">
               <button
                 className="accordion-button collapsed text-xl font-semibold text-zinc-800" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
@@ -60,7 +60,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className="accordion-item form-shadow">
+          <div className="accordion-item form-shadow" data-aos="flip-down" data-aos-delay="200">
             <h2 className="accordion-header" id="headingThree">
               <button
                 className="accordion-button collapsed text-xl font-semibold text-zinc-800" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
