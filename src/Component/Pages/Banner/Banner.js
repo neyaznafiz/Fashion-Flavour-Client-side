@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="zoom-out">
       <div className=" w-full p-2 bg-yellow-600">
         <div
           id="carouselExampleCaptions"

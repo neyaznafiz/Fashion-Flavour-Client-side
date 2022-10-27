@@ -8,7 +8,7 @@ function useLoading() {
         setLoading(true)
         setTimeout(() => {
            setLoading(false) 
-        }, 2550);
+        }, 2500);
     }, [])
 
     return [loading, setLoading]

@@ -20,6 +20,7 @@ import Inventory from "./Component/Pages/Products/Inventory/Inventory";
 import Footer from "./Component/Shared/Footer/Footer";
 import useLoading from "./Component/Hooks/useLoading";
 import { PropagateLoader } from "react-spinners";
+import Typed from "react-typed";
 
 function App() {
   const [loading] = useLoading();
@@ -28,8 +29,15 @@ function App() {
   return (
     <div>
       {loading ? (
-        <div className="w-screen bdr h-screen flex justify-center items-center bg-[#c78f18]">
-          <PropagateLoader color="#1f241a" size={30} />
+        <div className=" w-screen h-screen bg-[#c78f18] p-6 sm:p-10">
+          <div className=" h-full border-2 border-[#422911] flex flex-col justify-center items-center">
+            <Typed
+              strings={["WELCOME TO FASHION FLAVOUR"]}
+              typeSpeed={50}
+              className="mb-5 text-center text-3xl md:text-5xl text-[#422911] tracking-wide"
+            />
+            <PropagateLoader color="#1f241a" size={30} />
+          </div>
         </div>
       ) : (
         <div>
