@@ -2,7 +2,7 @@
 
 ## Live-site Link: https://fashion-flavour.web.app/
 
-## Server-site Link: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-neyaznafiz
+## Server-site Link: https://github.com/neyaznafiz/Fashion-Flavour_Server
 
 
 # About
