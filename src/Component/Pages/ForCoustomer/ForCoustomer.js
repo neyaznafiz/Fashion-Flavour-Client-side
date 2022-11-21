@@ -12,7 +12,7 @@ const ForCoustomer = () => {
     }
 
     return (
-        <div className='py-20 lg:py-40 w-full bg-no-repeat border lg:bg-cover' style={{ backgroundImage: `url('https://i.ibb.co/R9MTXr3/c-cover.png')` }} data-aos="zoom-in">
+        <div className='py-20 lg:py-40 w-full bg-no-repeat border lg:bg-cover ' style={{ backgroundImage: `url('https://i.ibb.co/R9MTXr3/c-cover.png')` }} data-aos="zoom-in">
 
             <div className='text-center relative'>
                 <h2 className='font-serif text-md lg:text-3xl pb-3 text-slate-300 ' data-aos="zoom-in" data-aos-delay="200">Yes! Send me exclusive offers, unique gift ideas, and personalised tips for shopping and selling on Fashion Flavour.</h2>
