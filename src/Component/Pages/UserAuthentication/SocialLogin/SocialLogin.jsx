@@ -46,15 +46,16 @@ const SocialLogin = () => {
   const googleSignIn = async () => {
     signInWithGoogle();
     const { data } = await axios.post(
-      `https://fashion-flavour-serverside-production.up.railway.app/signup`,
-      { googleUser }
+      `https://fashion-flavour-server.vercel.app/signup`,
+      {
+        googleUser,
+      }
     );
     localStorage.setItem("accessJwtToken", data.accessJwtToken);
   };
 
   return (
-    <div  data-aos="flip-down"
-    data-aos-delay="200">
+    <div data-aos="flip-down" data-aos-delay="200">
       <div className=" py-2 px-4 flex lg:justify-between justify-center lg:gap-0 gap-16 items-center social-shadow">
         <div className="text-gray-300 hover:text-gray-800">
           <button

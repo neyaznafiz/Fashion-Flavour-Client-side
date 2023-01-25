@@ -6,7 +6,7 @@ const useProducts = () => {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    const url = `https://fashion-flavour-serverside-production.up.railway.app/dress`;
+    const url = `https://fashion-flavour-server.vercel.app/dress`;
 
     fetch(url)
       .then((res) => res.json())

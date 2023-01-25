@@ -12,13 +12,11 @@ const Update = () => {
 
   const { img, name, supplier, description, price, quantity } = product;
 
-  // const { data } = axios.get(`https://fashion-flavour-serverside-production.up.railway.app//dress/${Id}`, product)
+  // const { data } = axios.get(`https://fashion-flavour-server.vercel.app//dress/${Id}`, product)
   // setProduct(data)
 
   useEffect(() => {
-    fetch(
-      `https://fashion-flavour-serverside-production.up.railway.app/dress/${Id}`
-    )
+    fetch(`https://fashion-flavour-server.vercel.app/dress/${Id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
@@ -35,7 +33,7 @@ const Update = () => {
     const updatedData = +restock + newQuantity;
     setNewQuantity(updatedData);
 
-    const url = `https://fashion-flavour-serverside-production.up.railway.app/dress/${Id}`;
+    const url = `https://fashion-flavour-server.vercel.app/dress/${Id}`;
 
     fetch(url, {
       method: "PUT",
@@ -58,7 +56,7 @@ const Update = () => {
       const updatedData = newQuantity - 1;
       setNewQuantity(updatedData);
 
-      const url = `https://fashion-flavour-serverside-production.up.railway.app/dress/${Id}`;
+      const url = `https://fashion-flavour-server.vercel.app/dress/${Id}`;
 
       fetch(url, {
         method: "PUT",
@@ -77,7 +75,7 @@ const Update = () => {
   };
 
   return (
-    <div className="mt-16 w-full"  data-aos="zoom-in">
+    <div className="mt-16 w-full" data-aos="zoom-in">
       <div className=" grid lg:justify-center mx-3 my-10 lg:my-28">
         <div className="grid grid-cols-1 lg:flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
           <img
@@ -88,22 +86,32 @@ const Update = () => {
           />
 
           <div className="p-6 flex flex-col justify-start">
-            <h5 className="text-gray-900 text-3xl font-medium mb-2 font-serif"  data-aos="fade-left">
+            <h5
+              className="text-gray-900 text-3xl font-medium mb-2 font-serif"
+              data-aos="fade-left"
+            >
               {name}
             </h5>
 
             <div className="">
-              <p className="text-gray-600 text-lg font-bold pb-4"  data-aos="fade-left">
+              <p
+                className="text-gray-600 text-lg font-bold pb-4"
+                data-aos="fade-left"
+              >
                 Supplier: {supplier}
               </p>
-              <p className="text-gray-700 text-base mb-4"  data-aos="fade-left">
+              <p className="text-gray-700 text-base mb-4" data-aos="fade-left">
                 {description?.slice(0, 130)}....
               </p>
 
               <div className="flex justify-between font-semibold">
-                <p className="text-gray-900"  data-aos="fade-left">Price : ${price}</p>
+                <p className="text-gray-900" data-aos="fade-left">
+                  Price : ${price}
+                </p>
 
-                <p className="text-gray-600"  data-aos="fade-left">Quantity : {newQuantity}</p>
+                <p className="text-gray-600" data-aos="fade-left">
+                  Quantity : {newQuantity}
+                </p>
               </div>
             </div>
 
@@ -117,7 +125,10 @@ const Update = () => {
                   className=" card-shadow mb-2 px-2 py-2"
                   data-aos="flip-up"
                 />
-                <button className="card-shadow text-center hover:shadow-lg hover:text-black font-semibold px-3 py-2"  data-aos="flip-down">
+                <button
+                  className="card-shadow text-center hover:shadow-lg hover:text-black font-semibold px-3 py-2"
+                  data-aos="flip-down"
+                >
                   ADD STOCK
                 </button>
               </form>

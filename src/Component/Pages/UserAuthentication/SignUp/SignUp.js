@@ -47,8 +47,10 @@ const SignUp = () => {
     createUserWithEmailAndPassword(email, password);
 
     const { data } = await axios.post(
-      `https://fashion-flavour-serverside-production.up.railway.app/signup`,
-      { email }
+      `https://fashion-flavour-server.vercel.app/signup`,
+      {
+        email,
+      }
     );
     localStorage.setItem("accessJwtToken", data.accessJwtToken);
 
@@ -171,13 +173,16 @@ const SignUp = () => {
                         type="submit"
                         className=" px-4 py-2 mb-3 btn-shadow text-gray-100"
                         data-aos="fade-left"
-                          data-aos-delay="200"
+                        data-aos-delay="200"
                       >
                         Sign Up
                       </button>
 
-                      <div className="text-gray-200 font-semibold  flex gap-x-2 " data-aos="fade-right"
-                          data-aos-delay="200">
+                      <div
+                        className="text-gray-200 font-semibold  flex gap-x-2 "
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                      >
                         <p>Already have an account ?</p>
                         <Link
                           to="/login"

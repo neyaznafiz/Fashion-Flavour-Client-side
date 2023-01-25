@@ -15,7 +15,7 @@ const ManageInventory = () => {
   const [size, setSize] = useState(4);
 
   useEffect(() => {
-    const url = `https://fashion-flavour-serverside-production.up.railway.app/dress?page=${page}&size=${size}`;
+    const url = `https://fashion-flavour-server.vercel.app/dress?page=${page}&size=${size}`;
 
     fetch(url)
       .then((res) => res.json())
@@ -23,9 +23,7 @@ const ManageInventory = () => {
   }, [page, size]);
 
   useEffect(() => {
-    fetch(
-      `https://fashion-flavour-serverside-production.up.railway.app/productCount`
-    )
+    fetch(`https://fashion-flavour-server.vercel.app/productCount`)
       .then((res) => res.json())
       .then((data) => {
         const count = data.count;
@@ -37,7 +35,7 @@ const ManageInventory = () => {
   const productDeleteHandle = async (id) => {
     if (window.confirm("Are you sure you want to delete?")) {
       await axios.delete(
-        `https://fashion-flavour-serverside-production.up.railway.app/dress/${id}`,
+        `https://fashion-flavour-server.vercel.app/dress/${id}`,
         product
       );
       const exist = product.filter((product) => product._id !== id);
@@ -51,7 +49,10 @@ const ManageInventory = () => {
     <div className=" flex lg:mx-auto">
       <div className=" grid my-10 lg:mx-auto  px-5 pt-5 ">
         <div>
-          <p className="text-center mx-auto text-4xl font-serif font-semibold mb-5 border-b-2 border-zinc-700 w-6/12" data-aos="zoom-in">
+          <p
+            className="text-center mx-auto text-4xl font-serif font-semibold mb-5 border-b-2 border-zinc-700 w-6/12"
+            data-aos="zoom-in"
+          >
             ALL PRODUCTS
           </p>
         </div>

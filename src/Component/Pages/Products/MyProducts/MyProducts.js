@@ -19,7 +19,7 @@ const MyProducts = () => {
       const email = user.email;
       console.log(email);
 
-      const url = `https://fashion-flavour-serverside-production.up.railway.app/mydress?email=${email}`;
+      const url = `https://fashion-flavour-server.vercel.app/mydress?email=${email}`;
       try {
         const { data } = await axios.get(url, {
           // headers: {
@@ -44,7 +44,7 @@ const MyProducts = () => {
   const productDeleteHandle = async (id) => {
     if (window.confirm("Are you sure you want to delete?")) {
       await axios.delete(
-        `https://fashion-flavour-serverside-production.up.railway.app/dress/${id}`,
+        `https://fashion-flavour-server.vercel.app/dress/${id}`,
         product
       );
       const exist = product.filter((product) => product._id !== id);
@@ -89,7 +89,7 @@ const MyProducts = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {product.map((product) => (
-          <div key={product._id} className=""  data-aos="zoom-in">
+          <div key={product._id} className="" data-aos="zoom-in">
             <div className="flex justify-center ">
               <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg hover-zoom">
                 <img

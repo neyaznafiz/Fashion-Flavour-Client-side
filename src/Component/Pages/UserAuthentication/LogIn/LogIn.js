@@ -48,7 +48,7 @@ const LogIn = () => {
 
     await signInWithEmailAndPassword(email, password);
     const { data } = await axios.post(
-      `https://fashion-flavour-serverside-production.up.railway.app/login`,
+      `https://fashion-flavour-server.vercel.app/login`,
       { email }
     );
     localStorage.setItem("accessJwtToken", data.accessJwtToken);
